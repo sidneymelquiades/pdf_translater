@@ -28,6 +28,10 @@ def image_2_text(path_to_tesseract : str, image_path : str ):
     # Displaying the extracted text
     return text[:-1]
 
+
+
+######### colocar spacy para dentro desse código
+
 if __name__=='__main__':
 
     path_to_tesseract = r"C:\Users\sidneyd\AppData\Local\Programs\Tesseract-OCR\tesseract.exe"
