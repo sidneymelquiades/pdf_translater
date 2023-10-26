@@ -8,7 +8,9 @@ def pdf_2_image(pdf_path: str):
 
     for i in range(len(images)):
         # Save pages as images in the pdf
-        images[i].save('file_output_image\page' + str(i) + '.jpg', 'JPEG')
+        assets_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'file_output_image\page'))
+        images[i].save(assets_dir + str(i) + '.jpg', 'JPEG')
 
 if __name__=='__main__':
-    pass
+
+
